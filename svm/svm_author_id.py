@@ -22,8 +22,8 @@ features_train, features_test, labels_train, labels_test = preprocess()
 
 ### These lines effectively slice the training dataset down to 1% 
 ### of its original size, tossing out 99% of the training data.
-features_train = features_train[:len(features_train)/100] 
-labels_train = labels_train[:len(labels_train)/100] 
+# features_train = features_train[:len(features_train)/100] 
+# labels_train = labels_train[:len(labels_train)/100] 
 
 
 print "Begin trainning:"
