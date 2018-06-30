@@ -28,7 +28,7 @@ labels_train = labels_train[:len(labels_train)/100]
 
 print "Begin trainning:"
 t0 = time()
-clf = SVC(kernel='linear')
+clf = SVC(C=10000.0, kernel='rbf')
 clf.fit(features_train, labels_train)
 print "training time:", round(time()-t0, 3), "s"
 
