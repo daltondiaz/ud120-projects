@@ -27,6 +27,8 @@ pred = clf.predict(features_test)
 
 print "Accuracy: ", accuracy_score(pred, labels_test)
 
+print "Number of Features: ", len(features_train[0])
+
 #########################################################
 ### your code goes here ###
 
