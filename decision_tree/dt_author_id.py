@@ -21,13 +21,14 @@ from sklearn.metrics import accuracy_score
 ### labels_train and labels_test are the corresponding item labels
 features_train, features_test, labels_train, labels_test = preprocess()
 
+print "Number of Features: ", len(features_train[0])
+
 clf = tree.DecisionTreeClassifier(min_samples_split=40)
 clf = clf.fit(features_train, labels_train)
 pred = clf.predict(features_test)
 
 print "Accuracy: ", accuracy_score(pred, labels_test)
 
-print "Number of Features: ", len(features_train[0])
 
 #########################################################
 ### your code goes here ###
